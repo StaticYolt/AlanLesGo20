@@ -86,5 +86,9 @@ const renderloop = () => {
   window.requestAnimationFrame(renderloop);
 };
 
-
+document.body.addEventListener('click', () => {
+  const audio = document.getElementById('bgm');
+  audio.muted = false;
+  audio.play();
+});
 renderloop();
