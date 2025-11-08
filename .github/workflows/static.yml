@@ -21,7 +21,7 @@ jobs:
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist  # 👈 make sure this folder exists after build
+          path: src/dist  # 👈 make sure this folder exists after build
 
   deploy:
     runs-on: ubuntu-latest
